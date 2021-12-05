@@ -4,6 +4,8 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
+import 'tailwindcss/tailwind.css'
+
 new Vue({
   render: function (h) { return h(App) },
 }).$mount('#app')
