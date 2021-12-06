@@ -82,12 +82,15 @@ export default {
 
 	<div class="flex-grow max-w-screen-md mx-auto">
 
+
+		
+
 		<div class="flex items-center">
 
-			<img alt="Product image" :src="`https://bigw.com.au${product_data.assets.images[0].sources[0].url}`" class="shadow-lg rounded">
+			<img alt="Product image" :src="`https://bigw.com.au${product_data.assets.images[0].sources[0].url}`" class="shadow-lg rounded w-96">
 			<div class="text-left ml-5">
 				<div class="text-2xl">{{ product_data.name }}</div>
-				<div>{{ product_data.code }}</div>
+				<div>AN: {{ product_data.code }}</div>
 			</div>
 			
 		</div>
