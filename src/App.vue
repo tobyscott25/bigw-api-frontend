@@ -1,8 +1,12 @@
 <script>
 import _ from 'lodash'
 import axios from 'axios'
+import VueBarcode from 'vue-barcode';
 
 export default {
+	components: {
+		'barcode': VueBarcode
+	},
 	data: function () {
 		return {
 			status: 0, // 0: Idle, 1: Typing/Loading, 2: Success, 3: Error
@@ -111,6 +115,8 @@ tr:nth-child(even) {
 					<div class="text-2xl">{{ product_data.name }}</div>
 					<div>EAN: {{ product_data.information.ean }}</div>
 					<div>{{ product_data.listingStatus }}</div>
+					<barcode :value="product_data.information.ean" format="ean13" displayValue="false" background="transparent" width="2" height="80"></barcode>
+					
 				</div>
 			</div>
 
