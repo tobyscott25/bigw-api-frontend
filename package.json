@@ -1,0 +1,25 @@
+{
+  "name": "bigw-api-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^4.5.1",
+    "axios": "^0.24.0",
+    "lodash": "^4.17.21",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-barcode": "^1.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
